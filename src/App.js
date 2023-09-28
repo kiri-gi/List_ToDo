@@ -115,7 +115,7 @@ function App() {
       </div>
       <div className='list-todo'>
         <h2>Lista de Tarefas:</h2>
-        {todos.length === 0 && <p>Não há tarefas!</p>}
+        {todos.length === "undefined" && <p>Não há tarefas!</p>}
         {todos.map((todo) => (
           <div className='todo' key={todo.id}>
             <h3 className={todo.done ? "todo-done" : ""}>{todo.title}</h3>
